@@ -1,0 +1,28 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+const NavBar = () => {
+  return (
+    <nav className="sticky-top navbar navbar-expand-lg bg-info">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">NEWS Monkey</Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/general">general</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/business">business</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/health">health</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/science">science</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/sports">sports</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/technology">technology</Link></li>
+            <li className="nav-item"> <Link className="nav-link text-muted" to="/entertainment">entertainment</Link></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  )
+}
+export default NavBar
+
+
